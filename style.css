@@ -1,0 +1,363 @@
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body, h1,h2,h3, h4, h5, h6, a{
+    font-family: 'Spartan', sans-serif;
+}
+
+/* ------ header section ------- */
+.header-design{
+    background-color: #e7e6e6;
+}
+
+.header-logo img {
+    width: 123px;
+}
+
+.header-design ul{}
+.header-design ul li {
+    padding: 0 12px;
+}
+.header-design ul li a {
+    font-size: 20px;
+    line-height: 18px;
+    position: relative;
+    font-weight: 510;
+}
+.header-design ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3.2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    top: 59px;
+    transition: .6s;
+}
+.header-design ul li a:hover{
+    color: blue !important;
+}
+.header-design ul li a:hover::after{
+    width: 105%;
+}
+
+.home-for-active{
+    color: blue !important;
+    position: relative;
+}
+.home-for-active::after{
+    content: "";
+    position: absolute;
+    width: 105% !important;
+    height: 3.2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue !important;
+    top: 59px;
+}
+
+.header-btn{
+    
+}
+
+.header-btn a {
+    font-size: 26px;
+    background: white;
+    color: blue;
+    padding: 10px 39px;
+    border-radius: 46px;
+    font-weight: 600;
+    margin-left: 107px;
+    margin-bottom: 3px;
+    display: inline-block;
+    position: relative;
+    z-index: 111;
+    transition: .5s;
+}
+
+.header-btn a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgb(87, 87, 219);
+   
+    border-radius: 46px;
+    z-index: -1;
+    transition: .6s;
+}
+
+.header-btn a:hover{
+    color: white;
+}
+
+.header-btn a:hover::after{
+    width: 100%;
+}
+
+/* --------- banner section ---------- */
+
+.banner-section{
+    background-color: #edf6ff; 
+}
+
+.banner-text {
+    padding: 124px 0;
+}
+.banner-text h2 {
+    font-size: 38px;
+    font-weight: 600;
+    padding-bottom: 38px;
+}
+.banner-text p {
+    padding-bottom: 33px;
+    line-height: 26px;
+    font-size: 17px;
+}
+.banner-text a {
+    font-size: 20px;
+    background-color: rgb(96, 109, 223);
+    padding: 13px 27px;
+    border-radius: 46px;
+    color: white;
+    margin-bottom: 9px;
+    display: inline-block;
+    border: 1.5px solid transparent !important;
+    transition: .5s;
+}
+
+.banner-text a:hover{
+    background-color: white;
+    color: #3415e6 !important;
+    border: 1.5px solid black !important;
+    border-radius: 46px ;
+}
+
+.banner-pic{
+    position: relative;
+}
+.banner-pic img {
+    height: 699px;
+    width: 642px;
+    border-radius: 50%;
+    position: absolute;
+    top: -94px;
+    left: 103px;
+}
+/* -------- provide section ---------- */
+
+.provide-section {
+    padding: 100px 0;
+    width: 75%;
+    margin: auto;
+}
+.provide-title{
+    padding-bottom: 50px;
+}
+.provide-title h6{
+    color: #9b8dec;
+}
+.provide-title h1 {
+    width: 84%;
+    font-size: 50px;
+    font-weight: 500;
+    padding: 12px 0;
+}
+.title-underline {
+    width: 91px !important;
+    height: 5px;
+    background-color: #9b8dec;
+    margin-top: -9px;
+    margin-bottom: 29px;
+}
+.provide-title p {
+    width: 60% ;
+    font-size: 18px;
+}
+
+.product-item-design {
+    background-color: #f9fcff;
+    padding: 33px;
+    transition: .7s;
+}
+.product-item-design h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.product-item-design i {
+    background-color: #5252f0;
+    color: white;
+    padding: 24px;
+    font-size: 31px;
+    border-radius: 50px 50px 50px 0;
+    margin-bottom: 24px;
+    transition: .7s;
+}
+.product-item-design p{}
+
+.second-underline {
+    width: 23% !important;
+    margin-top: 0px;
+    margin-bottom: 26px;
+    background-color: #3b20d8;
+    transition: .7s;
+}
+
+.product-item-design:hover{
+    background-color: #5252f0;
+    color: white;
+    transform: scale(1.05);
+}
+
+.product-item-design:hover i{
+    background-color: white;
+    color: blue;
+}
+.product-item-design:hover .second-underline{
+    background-color: white !important;
+    width: 32% !important;
+}
+
+.extra-img{
+    position: relative;
+    
+}
+.extra-img img {
+    position: absolute;
+    left: -65px;
+    top: -179px;
+    z-index: -1;
+}
+
+/* ------ grow animation --------- */
+.grow-section {
+    background-image: url(https://i.ibb.co/g7x9XLz/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.grow-section::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(57, 57, 204, 0.658);
+    z-index: -1;
+}
+
+.grow-title{
+    color: white;
+}
+.grow-title h4{}
+.grow-title h1 {
+    font-size: 46px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.third-underline {
+    background-color: white;
+    width: 13% !important;
+    margin: auto;
+    height: 8px !important;
+}
+
+.grow-title p {
+    font-size: 22px;
+    width: 70%;
+    margin: auto;
+    margin-top: 26px;
+}
+
+/* ---- grow animation part ------ */
+
+.grow-animation{}
+
+.grow-animation-part {
+    background-color: white;
+    padding: 45px 50px;
+    margin-top: 120px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    transition: .5s;
+}
+.grow-animation-part i {
+    font-size: 40px;
+    color: blue;
+}
+
+.grow-animation-part::after {
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 129px;
+    top: 1.5px;
+    left: .5px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+
+    animation: playbtn 2s infinite;
+}
+
+.grow-animation-part::before {
+    content: "";
+    position: absolute;
+    width: 153px;
+    height: 153px;
+    top: -10px;
+    left: -12px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+
+    animation: playbtn 2s infinite;
+}
+
+.grow-animation-part:hover{
+    background-color: blue;
+}
+.grow-animation-part:hover i{
+    color: white !important;
+}
+
+@keyframes playbtn{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.1);
+        opacity: 0.4;       
+    }
+    50%{
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+    75%{
+        transform: scale(1.5);
+        opacity: 0.9;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
